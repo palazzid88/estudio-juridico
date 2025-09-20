@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudio Jurídico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --color-primario: #1F2937;
+      --color-secundario: #4B5563;
+      --color-acento: #D97706;
+      --imagen-portada: url('./img/banner-estudio.jpg');
+      --logo: url('./img/logo.png');
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 bg-center bg-contain bg-no-repeat" style="background-image: var(--logo);"></div>
+        <span class="font-bold text-xl text-[var(--color-primario)]">Estudio Jurídico</span>
+      </div>
+      <nav class="space-x-6">
+        <a href="#quienes-somos" class="hover:text-[var(--color-acento)]">Quiénes somos</a>
+        <a href="#servicios" class="hover:text-[var(--color-acento)]">Servicios</a>
+        <a href="#staff" class="hover:text-[var(--color-acento)]">Nuestro Staff</a>
+        <a href="#clientes" class="hover:text-[var(--color-acento)]">Clientes</a>
+        <a href="#contacto" class="hover:text-[var(--color-acento)]">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Portada -->
+  <section class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: var(--imagen-portada);">
+    <div class="bg-[rgba(0,0,0,0.6)] p-8 rounded-md text-center" data-aos="fade-up" data-aos-duration="1000">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Estudio Jurídico</h1>
+      <p class="text-white text-lg md:text-2xl">Profesionalismo, Confianza y Experiencia</p>
+    </div>
+  </section>
+
+  <!-- Quiénes somos -->
+  <section id="quienes-somos" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-[var(--color-primario)] mb-6">Quiénes Somos</h2>
+      <p class="text-[var(--color-secundario)] text-lg">
+        Somos un equipo de abogados especializados en brindar soluciones legales efectivas y confiables, con años de experiencia en derecho civil, comercial y corporativo.
+      </p>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-20">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-[var(--color-primario)] mb-12" data-aos="fade-up">Nuestros Servicios</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 border rounded-lg hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="100">
+          <!-- Icono -->
+          <div class="text-[var(--color-acento)] mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6m5 6H5a2 2 0 01-2-2V5a2 2 0 012-2h4l2 3h4l2-3h4a2 2 0 012 2v14a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-xl mb-3">Asesoría Legal Corporativa</h3>
+          <p class="text-[var(--color-secundario)]">Brindamos orientación integral a empresas, contratos y gestión de riesgos legales.</p>
+        </div>
+        <div class="p-6 border rounded-lg hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="200">
+          <div class="text-[var(--color-acento)] mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A1 1 0 016 18h12a1 1 0 01.879 1.515l-6 9a1 1 0 01-1.758 0l-6-9A1 1 0 015.121 17.804zM12 3v6"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-xl mb-3">Derecho Civil</h3>
+          <p class="text-[var(--color-secundario)]">Defensa de intereses particulares, familia, sucesiones y propiedad.</p>
+        </div>
+        <div class="p-6 border rounded-lg hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="300">
+          <div class="text-[var(--color-acento)] mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6m5 6H5a2 2 0 01-2-2V5a2 2 0 012-2h4l2 3h4l2-3h4a2 2 0 012 2v14a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-xl mb-3">Litigios y Representación</h3>
+          <p class="text-[var(--color-secundario)]">Representación profesional en tribunales con estrategias claras y efectivas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Staff -->
+  <section id="staff" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-[var(--color-primario)] mb-12" data-aos="fade-up">Nuestro Staff</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6" data-aos="fade-up" data-aos-delay="100">
+          <img src="./img/staff1.jpg" alt="Abogado 1" class="w-48 h-48 mx-auto rounded-full object-cover mb-4">
+          <h3 class="text-xl font-semibold">Dra. Ana Pérez</h3>
+          <p class="text-[var(--color-secundario)]">Socio Senior</p>
+        </div>
+        <div class="p-6" data-aos="fade-up" data-aos-delay="200">
+          <img src="./img/staff2.jpg" alt="Abogado 2" class="w-48 h-48 mx-auto rounded-full object-cover mb-4">
+          <h3 class="text-xl font-semibold">Dr. Juan Gómez</h3>
+          <p class="text-[var(--color-secundario)]">Abogado Corporativo</p>
+        </div>
+        <div class="p-6" data-aos="fade-up" data-aos-delay="300">
+          <img src="./img/staff3.jpg" alt="Abogado 3" class="w-48 h-48 mx-auto rounded-full object-cover mb-4">
+          <h3 class="text-xl font-semibold">Dra. Laura Méndez</h3>
+          <p class="text-[var(--color-secundario)]">Litigios & Representación</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clientes -->
+  <section id="clientes" class="py-20">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-[var(--color-primario)] mb-12" data-aos="fade-up">Clientes que Confían en Nosotros</h2>
+      <div class="flex flex-wrap justify-center gap-8" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-32 h-16 bg-gray-300 rounded"></div>
+        <div class="w-32 h-16 bg-gray-300 rounded"></div>
+        <div class="w-32 h-16 bg-gray-300 rounded"></div>
+        <div class="w-32 h-16 bg-gray-300 rounded"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-20 bg-gray-50">
+    <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-[var(--color-primario)] mb-6">Contacto</h2>
+      <p class="text-[var(--color-secundario)] mb-6">Si desea comunicarse con nosotros, complete el siguiente formulario o llámenos directamente.</p>
+      <form class="grid gap-6">
+        <input type="text" placeholder="Nombre" class="p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-acento)]">
+        <input type="email" placeholder="Correo Electrónico" class="p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-acento)]">
+        <textarea placeholder="Mensaje" rows="5" class="p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-acento)]"></textarea>
+        <button type="submit" class="bg-[var(--color-acento)] text-white font-semibold py-3 rounded-md hover:bg-yellow-600 transition">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--color-primario)] text-white py-6 text-center">
+    &copy; 2025 Estudio Jurídico. Todos los derechos reservados.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
