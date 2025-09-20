@@ -18,20 +18,40 @@
 </head>
 <body class="font-sans text-gray-800">
 
-  <!-- Header -->
+  <!-- Header con menú hamburguesa -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
       <div class="flex items-center space-x-3">
         <div class="w-12 h-12 bg-center bg-contain bg-no-repeat" style="background-image: var(--logo);"></div>
         <span class="font-bold text-xl text-[var(--color-primario)]">Estudio Jurídico</span>
       </div>
-      <nav class="space-x-6">
+
+      <!-- Navegación de escritorio -->
+      <nav class="hidden md:flex space-x-6">
         <a href="#quienes-somos" class="hover:text-[var(--color-acento)]">Quiénes somos</a>
         <a href="#servicios" class="hover:text-[var(--color-acento)]">Servicios</a>
         <a href="#staff" class="hover:text-[var(--color-acento)]">Nuestro Staff</a>
         <a href="#clientes" class="hover:text-[var(--color-acento)]">Clientes</a>
         <a href="#contacto" class="hover:text-[var(--color-acento)]">Contacto</a>
       </nav>
+
+      <!-- Botón hamburguesa -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="focus:outline-none">
+          <svg class="w-6 h-6 text-[var(--color-primario)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú desplegable móvil -->
+    <div id="menu" class="hidden md:hidden bg-white shadow-md">
+      <a href="#quienes-somos" class="block py-3 px-6 hover:bg-gray-100">Quiénes somos</a>
+      <a href="#servicios" class="block py-3 px-6 hover:bg-gray-100">Servicios</a>
+      <a href="#staff" class="block py-3 px-6 hover:bg-gray-100">Nuestro Staff</a>
+      <a href="#clientes" class="block py-3 px-6 hover:bg-gray-100">Clientes</a>
+      <a href="#contacto" class="block py-3 px-6 hover:bg-gray-100">Contacto</a>
     </div>
   </header>
 
@@ -146,9 +166,18 @@
     &copy; 2025 Estudio Jurídico. Todos los derechos reservados.
   </footer>
 
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    // Toggle menú hamburguesa
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
   </script>
 </body>
 </html>
